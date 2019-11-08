@@ -1,193 +1,487 @@
-<!DOCTYPE html> 
-<html>
-<head>
-	<title>First National Bank</title>
-	<link rel="icon" type="image/png" href="Untitled-1.png"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' type='text/css' href='settings.css'>
-    <link rel='stylesheet' type='text/css' href='Home.css'>
-</head>
-<body onload="startTime()">
 
+p{
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+img{
+	  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+   position: relative;
+}
+
+iframe{
+	 position: absolute;
+    top: 0;
+    left: 0;
 	
-	<div class="img">
-	
-		<img src="logo.png" width=12.5% height=12.5%>
-		
-		<div class="title-small">
-				<h1>FNB</h1>
-			</div>
-		
-		<div class="title-big">
-				<h1>First National Bank</h1>
-			</div>
-		
-		<input type="search" id="search_tx" placeholder="Type to Search...">
-		<div id="txt" class="Time"></div>
-		<a href="#" class="search_properties_icon"><i class="search2" style="color:black"></i></a>
-	</div>
-	
-		<a href="#" class="search_properties_icon"><i class="fa fa-search-plus" style="color:black"></i></a>
+}
 
-	<div class="list">
-		
-		<table >
-		
-		<th><button class="tablinks" onclick="openTab( event,'Home')" id="defaultOpen"> Home </button></th>
-		<th><button class="tablinks" onclick="openTab( event,'About')"> About Us </button></th>
-		<th><button class="tablinks" onclick="openTab( event,'Contact')">Contact Us </button></th>
-		<th><button class="tablinks" onclick="openTab( event,'Find')"> Find Us </button></th>
-		<th> <button class="tablinks" onclick="openTab( event,'Find')"> Services</button></th>
-		<th> <button class="tablinks" onclick="openTab( event,'Find')"> Support</button></th>
-        <th><button class="tablinks" onclick="openTab( event,'Find')"> Register </button></th>
-	   <th> <button class="tablinks" onclick="openTab( event,'Find')"> Login</button></th>
-		
-		</table>
-		
-	</div>
-	
-
-<div id="Home" class="tabcontent">
-
-	<div  id="back">
-
-	
-	
-		<div id="backblack" ><br>
-
-			
-			
-	
-		</div>
-		
-		
-		
-	</div>
-	
-  <div  class="Lower-tab" >
-
-
-		
-		<table>
-		<th>
-		<th><button class="tablinks" onclick="openTab( event,'Home')" id="defaultOpen"> Home </button></th>
-		<th><button class="tablinks" onclick="openTab( event,'About')"> About Us </button></th>
-		<th><button class="tablinks" onclick="openTab( event,'Contact')">Contact Us </button></th>
-		<th><button class="tablinks" onclick="openTab( event,'Find')"> Find Us </button></th>	
-		<th> <button class="tablinks" onclick="openTab( event,'Find')"> Services</button></th>
-		<th> <button class="tablinks" onclick="openTab( event,'Find')"> Support</button></th>
-        <th> <button class="tablinks" onclick="openTab( event,'Find')"> Register </button></th>
-	    <th> <button class="tablinks" onclick="openTab( event,'Find')"> Login</button></th>
-
-		  </th>
-		
-		</table>
-		
-				
-
-		
-		
-		<img src="FB.png" width=5.5% height=5.5% onClick="parent.location='https://www.facebook.com/'" style = "left : 80px; top: 30px;">
-		<img src="twitter.png" width=5.5% height=5.5% onClick="parent.location='https://www.twitter.com/'" style = " left : -5px; top: 130px;" >
-		<img src="instagram.png" width=5.5% height=5.5% onClick="parent.location='https://www.instagram.com/'" style = "left : 80px; top: 30px;">
-		<img src="reddit.png" width=5.5% height=5.5% onClick="parent.location='https://www.reddit.com/'" style = "left : -5px; top: 130px;">
-		
-		
-	<div class = "Main-Branch-Box">
-				<h3 style ="color: blue	 ">Main Branch: </h3>
-				<hr>
-				<p style ="color: white	 ">3, First Place, Kerk &, Simmonds St, Bank City, Johannesburg, 2000, South Africa</p>
-								<hr>
-
-				<h3 style ="color: red">HotLine : 19988</h3>
-				
-				</div>
-				
-	<div class="mapouter" style="left: 1150px; bottom: 120px;">
-	<div class="gmap_canvas">
-	<iframe  width="350" height="350"  id="gmap_canvas"
-	src="https://maps.google.com/maps?q=3%2C%20First%20Place%2C%20Kerk%20%26%2C%20Simmonds%20St%2C%20Bank%20City%2C%20Johannesburg%2C%202000%2C%20South%20Africa&t=&z=13&ie=UTF8&iwloc=&output=embed"
-	frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-	<style>
-	.mapouter{position:relative;text-align:right;height:350px;width:350px;}.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:350px;}
-	</style>
-	</div>
-	
-			</div>
-			
-</div>
-
-
-
-<script>
-
-function check()
+.img
 {
-var x=document.getElementById('inputem').value;
-if(x=="")
+	padding:5px; 
+	background-color:black;
+	width:100%;
+}
+
+.img a{
+position:absolute;
+right:16.2%;
+top:5.1%;
+}
+
+
+.img1
 {
-alert('Enter your Email');
+	padding:5px; 
+	background-color:black;
+	width:101%;
 }
-var y=document.getElementById('inputpw').value;
-if(y=="")
+
+.img1 a{
+position:absolute;
+right:16.2%;
+top:5.1%;
+}
+
+.Lower-tab
 {
-alert('Fill your Password');
+	padding:5px; 
+	background-color:black;
+	width:100%;
+	
 }
 
+.Lower-tab a{
+position:absolute;
+bottom : 100px;
 }
 
+.Main-Branch-Box{
+	
+	padding:75px; 
+	background-color:black;
+	width:15%;
+	height:18%;
+position: absolute;
+top : 990px;
+ left: 600px;
 
-function startTime() {
-  var today = new Date();
-  var hours = today.getHours();
-  var minutes = today.getMinutes();
-  
-  minutes = checkTime(minutes);
-  
-  document.getElementById('txt').innerHTML =
-  "Time: "+hours + ":" + minutes 
-  var t = setTimeout(startTime, 1000);
-}
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
+	
 }
 
-function openTab(evt,tabName) 
+.imgContact
+{ 
+	background-color: lightgray;
+	width: 1000px;
+	height: 300px;
+  border: 15px solid black;
+  padding: 50px;
+  margin: 20px;
+}
+
+.aligning{
+ float:left;
+ display:inline-block;
+ }
+
+
+#back
 {
-	var i,tablinks;
-	reset();
-  
-	tablinks = document.getElementsByClassName("tablinks");
-	
-	 for (i = 0; i < tablinks.length; i++) 
-	 {
-		
-		tablinks[i].className = tablinks[i].className.replace("active","");
-	 
-	 }
-  
-	document.getElementById(tabName).style.display = "block";
-	  evt.currentTarget.className += " active";
+	background-image:url(bnr-FNB-freedom-plaza-windhoek.jpg);
+	width:100%;
+	background-size:cover;
+	 object-fit: cover;
 }
 
-function reset()
+#backContact
+{
+	 object-fit: cover;
+	background-image:url(BackContact.jpg);
+	height:100vh;
+	width:100%;
+	background-size:cover;
+	background-color:black;
+}
+
+#backblack
+{
+	 object-fit: cover;
+	background-color:rgba(0,0,0,0.6);
+	height:100vh;
+	width:99.5%;	
+	border:9px solid black;
+}
+
+.list
+{
+	background-color:lightgray;
+	width:100.7%;
+}
+
+.list a
+{
+	width:100%;
+	font-size:17px;
+	color:black;
+	text-decoration:none;
+	padding:12px 15px;
+	text-align:left;
+	font-family:Arial;
+	display:inline;
+}
+
+.list button 
+{
+	background-color:lightgray;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px 45px;
+	transition: 0.4s;
+	font-size: 14px;
+}
+
+
+
+.list button:hover
+{
+	background-color:orange;
+}
+
+.list button.active 
+{
+	background-color:lightblue;	
+}
+
+.list-bottom
+{
+	background-color:lightgray;
+	width:101%;
+}
+
+.list-bottom a
+{
+	width:100%;
+	font-size:17px;
+	color:whitesmoke;
+	text-decoration:none;
+	padding:12px 15px;
+	text-align:left;
+	font-family:Arial;
+	display:inline;
+}
+
+.list-bottom button 
+{
+	background-color:lightgray;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 70px;
+	transition: 0.4s;
+	font-size: 14px;
+}
+
+
+
+.list-bottom button:hover
+{
+	background-color:orange;
+}
+
+.list-bottom button.active 
+{
+	background-color:lightblue;	
+}
+
+
+
+.img input
+{
+	position:absolute;
+	right:300px;
+	top:32px;
+}
+
+.words
+{
+	position:absolute;
+	top:53%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+
+
+
+.words h1
+{
+	color:whitesmoke;
+	font-size:60px;
+	
+}
+
+.tabcontent h3
+{
+	margin-top:0;	
+	
+}
+	
+#search_tx
+{
+border:3px solid black;
+	height:40px;
+	width:300px;
+	position:absolute;
+	top:30.0%;
+	right:0.5%;
+	border-radius:60px;
+	padding:10px
+}
+
+.search_properties_icon
 {
 
-	var tabcontent;
-	tabcontent = document.getElementsByClassName("tabcontent");
-	
-	for (i = 0; i < tabcontent.length; i++) 
-	{
-	
-		tabcontent[i].style.display = "none";
-	
+	  position:absolute;
+	right:0.75%;
+	top:32.5%;
+    transform:translate(-50%,-50%);
+}
+
+#paragraphMain 
+{
+  color:darkorange;
+  padding:5px;
+}
+
+#heading 
+{
+ color:black;
+}
+
+.title-small
+{
+	position:absolute;
+	top:8%;
+	left:30%;
+	transform:translate(-50%,-50%);
+}
+
+.title-small h1
+{ 
+	color:cyan;
+	font-size:75px;
+}
+
+.title-big
+{
+	position:absolute;
+	top:17.5%;
+	left:30%;
+	transform:translate(-50%,-50%);
+}
+
+.title-big h1
+{ 
+	color:whitesmoke;
+	font-size:60px;
+}
+
+.Time{
+color:lightgray;
+position:absolute;
+top:3%;
+right:1%;
+font-size:20px;
+}
+
+#Find{
+	background-image:url(loc4.png);
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:25%;
+}
+.loc{
+color:darkcyan;
+padding:10px;
+}
+
+.loc1{
+color:crimson;
+font-size:19px;
+background-color:lightblue;
+}
+
+#branch_LB{
+position:absolute;
+top:20%;
+}
+#facebook_page{
+	text-decoration:none;
+	position:null;
+	top:1.5%;
+	right:1%;
+	color:blue;	
+}
+#imgcity{
+
+	background-image:url(FNB-Branch.jpg);
+	height:200%;
+	width:100%;
+	position:absolute;
+	background-size:cover;
 	}
+#AboutUs
+{
+position:absolute;
+left:40%;
+text-align:center;
+height:10%;
+width:20%;
+color:black;
 }
-document.getElementById("defaultOpen").click();
 
+#AboutUs_roots{
+width:50%;
+height:30%;
+position:absolute;
+top:10%;
+color:black;
+font-size:120%;
+}
 
-</script>
+#AboutUs_FNB_Archives{
+width:50%;
+height:30%;
+position:absolute;
+top:34%;
+color:black;
+font-size:120%;
 
-</body>
-</html>
+}
+
+#AboutUs_FirstRand_Group
+{
+width:50%;
+height:30%;
+position:absolute;
+top:49%;
+color:black;
+font-size:120%;
+}
+
+#AboutUs_The_Associate_Model{
+width:50%;
+height:30%;
+position:absolute;
+top:66%;
+color:black;
+font-size:120%;
+}
+
+.email
+{
+position:absolute;
+top:68%;
+right:15%;
+color:whitesmoke;
+font-size:35px;
+}
+.email p
+{
+	position:absolute;
+	top:-150%;
+	left:3%;
+}
+.password
+{
+	position:absolute;
+	top:86%;
+	right:15%;
+	color:whitesmoke;
+	font-size:35px;
+	
+}
+.password p
+{
+	position:absolute;
+	top:-160%;
+	left:3%;
+}
+
+#inputem
+{
+	width:400px;
+	border:3px solid lightgray;
+	padding:15px 30px;
+	border-radius:30px;
+	outline:none;
+	border:2px solid darkorange;
+	box-shadow:0 0 8px darkorange;
+}
+#inputpw
+{
+	width:400px;
+	border:3px solid lightgray;
+	padding:15px 30px;
+	border-radius:30px;
+	outline:none;
+	border:2px solid darkorange;
+	box-shadow:0 0 8px darkorange;
+}
+.password button
+{
+	position:absolute;
+	top:120%;
+	left:30%;
+	width:450px;
+	height:40px;
+	margin-left:-128px;
+	margin-top:4%;
+	background-color:darkorange;
+	color:white;
+	font-weight:bold;
+	border-radius:30px;
+	font-size:20px;
+	outline:none;
+	border:2px solid white;
+}
+.email button
+{
+	position:absolute;
+	top:470%;
+	left:30%;
+	width:450px;
+	height:40px;
+	margin-left:-128px;
+	margin-top:4%;
+	background-color:darkorange;
+	color:white;
+	font-weight:bold;
+	border-radius:30px;
+	font-size:20px;
+	outline:none;
+	border:2px solid white;
+}
+::-webkit-input-placeholder
+{
+	
+	font-family:"Roboto", sans-serif;
+	font-size:15px;
+}
+.backhome
+{
+	background-color:pink;
+	width: 150px;
+	height: 30px;
+	top:50%;
+	right:50%;
+    border: 15px solid black;
+	padding: 200px;
+	margin: 200px;
+	margin-left:400px;
+	margin-top:140px;
+}
