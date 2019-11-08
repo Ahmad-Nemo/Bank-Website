@@ -4,17 +4,71 @@ p{
   font-weight: bold;
 }
 
+img{
+	  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+   position: relative;
+}
+
+iframe{
+	 position: absolute;
+    top: 0;
+    left: 0;
+	
+}
+
 .img
 {
 	padding:5px; 
 	background-color:black;
-	width:101%;
+	width:100%;
 }
 
 .img a{
 position:absolute;
 right:16.2%;
 top:5.1%;
+}
+
+
+.img1
+{
+	padding:5px; 
+	background-color:black;
+	width:101%;
+}
+
+.img1 a{
+position:absolute;
+right:16.2%;
+top:5.1%;
+}
+
+.Lower-tab
+{
+	padding:5px; 
+	background-color:black;
+	width:100%;
+	
+}
+
+.Lower-tab a{
+position:absolute;
+bottom : 100px;
+}
+
+.Main-Branch-Box{
+	
+	padding:75px; 
+	background-color:black;
+	width:15%;
+	height:18%;
+position: absolute;
+top : 990px;
+ left: 600px;
+
+	
 }
 
 .imgContact
@@ -36,33 +90,34 @@ top:5.1%;
 #back
 {
 	background-image:url(bnr-FNB-freedom-plaza-windhoek.jpg);
-	width:102%;
+	width:100%;
 	background-size:cover;
-	background-position:center;
+	 object-fit: cover;
 }
 
 #backContact
 {
+	 object-fit: cover;
 	background-image:url(BackContact.jpg);
 	height:100vh;
-	width:101%;
+	width:100%;
 	background-size:cover;
-	background-position:center;
 	background-color:black;
 }
 
 #backblack
 {
+	 object-fit: cover;
 	background-color:rgba(0,0,0,0.6);
 	height:100vh;
-	width:101%;	
+	width:99.5%;	
 	border:9px solid black;
 }
 
 .list
 {
 	background-color:lightgray;
-	width:101%;
+	width:100.7%;
 }
 
 .list a
@@ -83,10 +138,12 @@ top:5.1%;
 	border: none;
 	outline: none;
 	cursor: pointer;
-	padding: 14px 16px;
+	padding: 10px 45px;
 	transition: 0.4s;
 	font-size: 14px;
 }
+
+
 
 .list button:hover
 {
@@ -97,6 +154,49 @@ top:5.1%;
 {
 	background-color:lightblue;	
 }
+
+.list-bottom
+{
+	background-color:lightgray;
+	width:101%;
+}
+
+.list-bottom a
+{
+	width:100%;
+	font-size:17px;
+	color:whitesmoke;
+	text-decoration:none;
+	padding:12px 15px;
+	text-align:left;
+	font-family:Arial;
+	display:inline;
+}
+
+.list-bottom button 
+{
+	background-color:lightgray;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 70px;
+	transition: 0.4s;
+	font-size: 14px;
+}
+
+
+
+.list-bottom button:hover
+{
+	background-color:orange;
+}
+
+.list-bottom button.active 
+{
+	background-color:lightblue;	
+}
+
+
 
 .img input
 {
@@ -113,10 +213,14 @@ top:5.1%;
 	transform:translate(-50%,-50%);
 }
 
+
+
+
 .words h1
 {
 	color:whitesmoke;
 	font-size:60px;
+	
 }
 
 .tabcontent h3
@@ -127,24 +231,23 @@ top:5.1%;
 	
 #search_tx
 {
-	border:3px solid black;
+border:3px solid black;
 	height:40px;
 	width:300px;
 	position:absolute;
-	top:15.1%;
-	right:2%;
+	top:30.0%;
+	right:0.5%;
 	border-radius:60px;
-	padding:10px;
+	padding:10px
 }
 
 .search_properties_icon
 {
 
-	position:absolute;
-	right:0%;
-	top:17%;
+	  position:absolute;
+	right:0.75%;
+	top:32.5%;
     transform:translate(-50%,-50%);
-    font-size:24px;
 }
 
 #paragraphMain 
@@ -158,12 +261,40 @@ top:5.1%;
  color:black;
 }
 
+.title-small
+{
+	position:absolute;
+	top:8%;
+	left:30%;
+	transform:translate(-50%,-50%);
+}
+
+.title-small h1
+{ 
+	color:cyan;
+	font-size:75px;
+}
+
+.title-big
+{
+	position:absolute;
+	top:17.5%;
+	left:30%;
+	transform:translate(-50%,-50%);
+}
+
+.title-big h1
+{ 
+	color:whitesmoke;
+	font-size:60px;
+}
+
 .Time{
 color:lightgray;
 position:absolute;
-top:10%;
+top:3%;
 right:1%;
-font-size:100%;
+font-size:20px;
 }
 
 #Find{
@@ -193,8 +324,7 @@ top:20%;
 	position:null;
 	top:1.5%;
 	right:1%;
-	color:blue;
-	
+	color:blue;	
 }
 #imgcity{
 
@@ -203,7 +333,7 @@ top:20%;
 	width:100%;
 	position:absolute;
 	background-size:cover;
-}
+	}
 #AboutUs
 {
 position:absolute;
@@ -318,7 +448,6 @@ font-size:35px;
 	font-size:20px;
 	outline:none;
 	border:2px solid white;
-	cursor: pointer;
 }
 .email button
 {
@@ -336,7 +465,6 @@ font-size:35px;
 	font-size:20px;
 	outline:none;
 	border:2px solid white;
-	cursor: pointer;
 }
 ::-webkit-input-placeholder
 {
